@@ -17,6 +17,7 @@ func (s *Server) versionHandler(w http.ResponseWriter, r *http.Request) {
 	result := map[string]string{
 		"version": version.VERSION,
 		"commit":  version.REVISION,
+		"test":    "value",
 	}
 	s.JSONResponse(w, r, result)
 }
