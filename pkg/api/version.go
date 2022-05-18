@@ -18,6 +18,7 @@ func (s *Server) versionHandler(w http.ResponseWriter, r *http.Request) {
 		"version": version.VERSION,
 		"commit":  version.REVISION,
 		"test":    "value",
+		"test2":   "value2",
 	}
 	s.JSONResponse(w, r, result)
 }
