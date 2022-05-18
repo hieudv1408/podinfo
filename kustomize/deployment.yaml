@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: podinfod
-        image: hieudv1408/podinfo-image
+        image: hieudv1408/podinfo-image:1.0.0
         imagePullPolicy: IfNotPresent
         ports:
         - name: http
